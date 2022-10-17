@@ -18,7 +18,7 @@
         
         public function Salvar(){
             try{
-                $sql = "INSERT INTO `test`.`temp_table` (`temp_value`) VALUES (:temp)";
+                $sql = "INSERT INTO `ifc`.`temp_table` (`temp_value`) VALUES (:temp)";
                 $param = array( ":temp" => $this->getTemp());
                 $teste = parent::Execute($sql,$param);
                 return $teste;
